@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Task  1
+        Напишите функцию, которая принимает массив в качестве аргумента. Используя slice (), извлеките информацию из массива аргументов и верните новый массив, содержащий элементы «warm» и «sunny».
+
+        ['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']
+        */
+        function getSlice(arr){
+            return arr.slice(2,4);
+        }
+
+        var result = getSlice(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms'])
+        console.log(result);
+        
+        /* Task 2
+        Напишите функцию подсчета градусов Фаренгейта при входящем параметре температуры в цельсиях.
+        Алгоритм пересчета из градусов Цельсия в градусы Фаренгейта - это температура в градусах Цельсия, умноженная на 9/5 плюс 32.         
+        */
+        function convertCelsium(C){
+            return C*9/5 + 32;
+        }
+        console.log(convertCelsium(25));
+
+        /* Task 3
+        Напишите функцию которая бы переворачивала предоставленную строку
+        Возможно, вам придется превратить строку в массив, прежде чем вы можете обратить его. 
+        Ваш результат должен быть строкой.
+        "something"
+        */
+        function reverceStr(str){
+            let arr;
+            arr = str.split('');            
+            arr.reverse();
+            return arr.join('');
+        }
+        console.log(reverceStr("something"));
+
+        /* Task 4
+        Напишите функцию которая возвращает длину самого длинного слова в предложении. 
+        Ваш ответ должен быть числом.
+        "The quick brown fox jumped over the lazy dog"
+        */
+        function getMaxLength(str) {
+            let arr = str.split(' ');
+            let max = 0;
+            for(let i=0 ; i<arr.length; i++) {
+                if(max < arr[i].length) {
+                    max = arr[i].length;
+                }
+            }
+            return max;
+        }
+
+        console.log(getMaxLength("The quick brown fox jumped over the lazy dog"));
+
+     
+    </script>
+</body>
+</html>
