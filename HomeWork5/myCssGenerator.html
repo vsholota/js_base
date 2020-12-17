@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Css Generator</title>
+    <style>
+        #block {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            background-color: rgb(148, 189, 148);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-block">
+        <p>
+            Left border
+            <input type="range" id="rangeLeftBorder" min="0" max="100" value="2" oninput="getValue()">
+            <span id="textLeftBorder">2</span>
+        </p>
+        <p>
+            Top border
+            <input type="range" id="rangeTopBorder" min="0" max="100" value="2" oninput="getValue()">
+            <span id="textTopBorder">2</span>
+        </p>
+        <p>
+            Right border
+            <input type="range" id="rangeRightBorder" min="0" max="100" value="2" oninput="getValue()">
+            <span id="textRightBorder">2</span>
+        </p>
+        <p>
+            Bottom border
+            <input type="range" id="rangeBottomBorder" min="0" max="100" value="2" oninput="getValue()">
+            <span id="textBottomBorder">2</span>
+        </p>
+    </div>
+    <div id="block"></div>
+
+    <script>
+        function getValue() {
+            // getting value of the corner
+            var rangeLeftBorder = document.getElementById("rangeLeftBorder").value;
+            var rangeTopBorder = document.getElementById("rangeTopBorder").value;
+            var rangeRightBorder = document.getElementById("rangeRightBorder").value;
+            var rangeBottomBorder = document.getElementById("rangeBottomBorder").value;
+
+            // getting values of the text fields
+            var textLeftBorder = document.getElementById("textLeftBorder");
+            var textTopBorder = document.getElementById("textTopBorder");
+            var textRightBorder = document.getElementById("textRightBorder");
+            var textBottomBorder = document.getElementById("textBottomBorder");
+
+            // getting our block
+            var block = document.getElementById('block');
+
+            //setting values from range to filed
+            textLeftBorder.innerHTML = rangeLeftBorder;
+            textTopBorder.innerHTML = rangeTopBorder;
+            textRightBorder.innerHTML = rangeRightBorder;
+            textBottomBorder.innerHTML = rangeBottomBorder;
+
+            // setting border 
+            block.style.borderLeftWidth = rangeLeftBorder + "px ";
+            block.style.borderTopWidth = rangeTopBorder + "px ";
+            block.style.borderRightWidth = rangeRightBorder + "px ";
+            block.style.borderBottomWidth = rangeBottomBorder + "px ";
+        }
+    </script>
+
+</body>
+
+</html>
