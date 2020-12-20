@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp window</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #btnModal {
+            display: block;
+            position: fixed;        
+            left: 40px;
+            top: 40px;
+            background: green;
+            border-radius: 13px;
+            color: wheat;
+            padding: 13px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            outline: none!important;
+            box-shadow: 0 0 10px black;
+            border: 2px solid black;
+        }
+        .modal {
+            display: none;
+            width: 400px;
+            height: 200px;
+            position: fixed;
+            left: 50%;
+            transform: translate(-50%);
+            border: 3px solid green;
+            padding: 22px;
+            background: #fff;
+            border-radius: 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <script>
+        function checkScroll(){
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block"; 
+            } else {
+                btn.style.display = "none";
+            }
+        }
+        function openModal(){
+            myModal.style.display = 'block';
+            document.body.style.background = "rgba(0,0,0,0.4)";
+        }
+
+        function closeModal(){
+            myModal.style.display = 'none';
+            document.body.style.background = '#fff';
+        }
+
+        var btn = document.createElement('Button');
+        btn.id = "btnModal";
+        btn.innerText = "Open Modal";
+        btn.onclick = openModal;
+
+        var myModal = document.createElement("div");
+        myModal.className = 'modal';
+        myModal.innerText = "I do it!!!"
+
+        var closeBtn = document.createElement('Button');
+        closeBtn.style.position = "fixed";
+        closeBtn.style.position = "fixed";
+        closeBtn.style.top = "10px";
+        closeBtn.style.right = "10px";
+        closeBtn.style.position = "fixed";
+        closeBtn.innerText = "X";
+        closeBtn.onclick = closeModal;
+
+        
+        document.body.appendChild(btn);
+        document.body.append(myModal);
+        myModal.append(closeBtn);
+    </script>
+    
+</body>
+</html>

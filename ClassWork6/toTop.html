@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Створення кнопки "вверх"</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        #topBtn {
+            display: none;
+            right: 40px;
+            position: fixed;        
+            bottom: 40px;
+            background: green;
+            border-radius: 13px;
+            color: wheat;
+            padding: 13px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            outline: none!important;
+        }
+
+        #topBtn.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a name="toTop">top</a>
+    <div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>    
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, odio. Quasi reprehenderit beatae quibusdam voluptate odit, ut fugiat aliquam ipsa. Cum explicabo a eos est minus eum facilis necessitatibus. Tempore.</p>
+    </div>
+
+    <!-- <a id="topBtn" href="#toTop">back to top</a> -->
+
+    <script>
+        function checkScroll(){
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                btn.style.display = "block"; 
+            } else {
+                btn.style.display = "none";
+            }
+        }
+        function backToTop(){
+            window.scrollTo({top: 0, behavior: 'smooth'}); 
+        }
+        var btn = document.createElement('Button');
+        btn.id = "topBtn";
+        btn.innerText = "to Top";
+        btn.onclick = backToTop;
+        
+        window.onscroll = checkScroll;
+        document.body.appendChild(btn);
+    </script>
+</body>
+
+</html>
