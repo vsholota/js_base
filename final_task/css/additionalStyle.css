@@ -1,0 +1,142 @@
+/* Стилі для підложки */
+
+.overlay {
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+/* Стилі для кнопки закрити (хрестик)*/
+.close {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    left: 10px;
+    content: ' ';
+    height: 20px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.closeButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border: none;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+}
+
+.header__consult-modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 300px;
+    /*  Установаем высоту окна  */
+    height: 100%;
+    max-height: 400px;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgb(200, 240, 243);
+    transition: 0.3s all;
+    /* Устанавливаем шрифты */
+    font-family: 'Arial';
+    color: #458FF6;
+    line-height: 1.5;
+}
+
+.header__consult-modal-h2 {
+    font-size: 0.7cm;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.header__consult-modal-input {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border-width: 0px;
+    width: 200px;
+    border: 1.4px solid #458FF6;
+    outline: none;
+}
+
+.service__item-modal {
+    /* Скрываем окна  */
+    opacity: 0;
+    visibility: hidden;
+    /*  Установаем ширину окна  */
+    width: 100%;
+    max-width: 365px;
+    /*  Установаем высоту окна  */
+    height: 100%;
+    max-height: 350px;
+    /*  Центрируем и задаем z-index */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /*  Побочные стили   */
+    /* box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2); */
+    text-align: left;
+    padding: 20px 20px 0px 0px;
+    border-radius: 20px;
+    background: transparent;
+    
+    transition: 0.3s all;
+    /* Устанавливаем шрифты */
+    font-family: 'Arial';
+    color: black;
+    line-height: 1.5;
+}
+
+.header__consult-modal.active,
+.overlay.active,
+.service__item-modal.active {
+    opacity: 1;
+    visibility: visible;
+}

@@ -1,0 +1,4 @@
+1. добавить модалку по клику на кнопку Consult Today (скрин прилагается)
+2. реализовать кнопку backToTop
+3. добавить слайдер через slickSlider
+https://kenwheeler.github.io/slick/
